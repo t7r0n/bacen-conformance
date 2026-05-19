@@ -1,2 +1,0 @@
-[console_scripts]
-bacen-conformance = bacen_conformance.cli:main
