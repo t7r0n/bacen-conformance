@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+src/bacen_conformance/__init__.py
+src/bacen_conformance/cli.py
+src/bacen_conformance/core.py
+src/bacen_conformance.egg-info/PKG-INFO
+src/bacen_conformance.egg-info/SOURCES.txt
+src/bacen_conformance.egg-info/dependency_links.txt
+src/bacen_conformance.egg-info/entry_points.txt
+src/bacen_conformance.egg-info/top_level.txt
+tests/test_workflow.py

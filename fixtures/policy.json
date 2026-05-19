@@ -1,0 +1,18 @@
+{
+  "company": "Cumbuca",
+  "repo": "bacen-conformance",
+  "metrics": [
+    "cumbuca_coverage",
+    "wedge_risk",
+    "proprietary_precision",
+    "abstractions_latency"
+  ],
+  "failure_modes": [
+    "cumbuca_drift",
+    "wedge_gap",
+    "proprietary_misroute",
+    "abstractions_blindspot"
+  ],
+  "minimum_cases": 144,
+  "requires_evidence_markers": true
+}
