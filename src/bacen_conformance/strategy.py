@@ -6,15 +6,15 @@ from pathlib import Path
 from typing import Any
 
 
-COMPANY = 'Cumbuca'
+COMPANY = 'Bacen Conformance'
 REPO = 'bacen-conformance'
-PROJECT_TERMS = ['cumbuca', 'wedge', 'proprietary', 'abstractions', 'official', 'bacen', 'finance', 'specs']
-PROJECT_METRICS = ['cumbuca_coverage', 'wedge_risk', 'proprietary_precision', 'abstractions_latency']
-PROJECT_FAILURES = ['cumbuca_drift', 'wedge_gap', 'proprietary_misroute', 'abstractions_blindspot']
-PROJECT_ARCHETYPES = [{'name': 'cumbuca evidence replay', 'trigger': 'cumbuca signal changes while wedge context is stale', 'expected': 'block release until cited evidence is regenerated'}, {'name': 'wedge boundary probe', 'trigger': 'wedge handoff crosses a policy or trust boundary', 'expected': 'route to reviewer with evidence packet'}, {'name': 'proprietary regression harness', 'trigger': 'proprietary behavior regresses against the last accepted fixture', 'expected': 'open a regression issue with trace and benchmark delta'}, {'name': 'abstractions operator packet', 'trigger': 'abstractions output needs a human-readable audit packet', 'expected': 'accept only if decision claims cite fixture evidence'}]
-PROJECT_DIRECTION = "An open conformance test suite + idempotency/replay harness for Brazil's Pix and Open Finance APIs — written in Elixir to match Cumbuca's stack, vendor neutral on the surface, Cumbuca flavoured under the hood."
+PROJECT_TERMS = ['evidence', 'workflow', 'review', 'claims', 'fixtures', 'replay', 'handoff', 'trace', 'policy', 'decision', 'coverage', 'latency']
+PROJECT_METRICS = ['evidence_coverage', 'handoff_risk', 'claim_precision', 'review_latency']
+PROJECT_FAILURES = ['evidence_drift', 'handoff_gap', 'claim_misroute', 'review_blindspot']
+PROJECT_ARCHETYPES = [{'name': 'evidence replay', 'trigger': 'source evidence changes while workflow context is stale', 'expected': 'block release until cited evidence is regenerated'}, {'name': 'handoff boundary probe', 'trigger': 'handoff crosses a policy or trust boundary', 'expected': 'route to reviewer with evidence packet'}, {'name': 'claim regression harness', 'trigger': 'claim behavior regresses against the last accepted fixture', 'expected': 'open a regression issue with trace and benchmark delta'}, {'name': 'review operator packet', 'trigger': 'review output needs a human-readable audit packet', 'expected': 'accept only if decision claims cite fixture evidence'}]
+PROJECT_DIRECTION = "An open conformance test suite + idempotency/replay harness for Brazil's Pix and Open Finance APIs - written in Elixir to match Bacen Conformance's stack, vendor neutral on the surface, Bacen Conformance flavoured under the hood."
 VISUAL_THEME = {'name': 'clinical ops', 'bg': '#f7faf9', 'ink': '#10201c', 'muted': '#475569', 'border': '#d7e2df', 'a': '#0f766e', 'b': '#4f46e5', 'c': '#b45309', 'd': '#2563eb', 'soft_a': '#ecfdf5', 'soft_b': '#eef2ff', 'soft_c': '#fffbeb', 'soft_d': '#f0f9ff', 'hero': 'Evidence Triage Board', 'left': 'operational gates under review', 'right': 'review packets with citations', 'chain': 'evidence-to-decision chain', 'lane': 'case lane', 'gate': 'failure gate', 'action': 'clinical action'}
-HERO_TITLE = 'Cumbuca Evidence Triage Board'
+HERO_TITLE = 'Bacen Conformance'
 
 
 def _short(value: str, limit: int = 44) -> str:
@@ -107,7 +107,7 @@ def build_signal_model(rows: list[dict[str, Any]], clusters: list[dict[str, Any]
         "review_share": round(review / total, 4),
         "top_leverage_points": leverage,
         "readout": (
-            f"{COMPANY} gets a local, deterministic pressure test around "
+            "This local harness runs a deterministic pressure test around "
             f"{PROJECT_TERMS[0]}, {PROJECT_TERMS[1]}, and {PROJECT_TERMS[2]}. "
             "The useful part is the repeatable evidence path from fixture "
             "to failure to operator action."

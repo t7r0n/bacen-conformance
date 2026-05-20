@@ -1,67 +1,57 @@
 {
   "repo": "bacen-conformance",
-  "company": "Cumbuca",
+  "company": "Bacen Conformance",
   "rubric_axes": [
     {
-      "axis": "cumbuca_coverage",
+      "axis": "evidence_coverage",
       "failures": [
-        "cumbuca_drift"
+        "evidence_drift"
       ],
       "evidence_required": true
     },
     {
-      "axis": "wedge_risk",
+      "axis": "handoff_risk",
       "failures": [
-        "wedge_gap"
+        "handoff_gap"
       ],
       "evidence_required": true
     },
     {
-      "axis": "proprietary_precision",
+      "axis": "claim_precision",
       "failures": [
-        "proprietary_misroute"
+        "claim_misroute"
       ],
       "evidence_required": true
     },
     {
-      "axis": "abstractions_latency",
+      "axis": "review_latency",
       "failures": [
-        "abstractions_blindspot"
+        "review_blindspot"
       ],
       "evidence_required": true
     }
   ],
   "archetypes": [
     {
-      "name": "cumbuca evidence replay",
-      "trigger": "cumbuca signal changes while wedge context is stale",
+      "name": "evidence replay",
+      "trigger": "source evidence changes while workflow context is stale",
       "expected": "block release until cited evidence is regenerated"
     },
     {
-      "name": "wedge boundary probe",
-      "trigger": "wedge handoff crosses a policy or trust boundary",
+      "name": "handoff boundary probe",
+      "trigger": "handoff crosses a policy or trust boundary",
       "expected": "route to reviewer with evidence packet"
     },
     {
-      "name": "proprietary regression harness",
-      "trigger": "proprietary behavior regresses against the last accepted fixture",
+      "name": "claim regression harness",
+      "trigger": "claim behavior regresses against the last accepted fixture",
       "expected": "open a regression issue with trace and benchmark delta"
     },
     {
-      "name": "abstractions operator packet",
-      "trigger": "abstractions output needs a human-readable audit packet",
+      "name": "review operator packet",
+      "trigger": "review output needs a human-readable audit packet",
       "expected": "accept only if decision claims cite fixture evidence"
     }
   ],
-  "sources_used": [
-    "https://www.businesswire.com/news/home/20251203797500/en/Cumbuca-Launches-Fast-Track-Payments-Initiation-Access-to-Brazils-Booming-Financial-Services-Market",
-    "https://www.pymnts.com/news/international/latin-america/2025/global-fintechs-race-into-brazil-as-cumbuca-offers-a-new-back-door",
-    "https://lsvp.com/company/cumbuca/",
-    "https://pulse2.com/cumbuca-profile-daniel-ruhman-interview/amp/",
-    "https://thefintechtimes.com/in-profile-cumbuca-ceo-daniel-ruhman/",
-    "https://www.pismo.io/knowledge/cumbuca-business-case/",
-    "https://github.com/appcumbuca",
-    "https://github.com/appcumbuca/desafios",
-    "https://www.ycombinator.com/launches/Oxa-cumbuca-the-first-proxy-for-the-brazilian-regulated-ecosystem"
-  ]
+  "sources_used": []
 }

@@ -1,5 +1,5 @@
 {
-  "company": "Cumbuca",
+  "company": "Bacen Conformance",
   "repo": "bacen-conformance",
   "cases": 144,
   "status_counts": {
@@ -9,54 +9,54 @@
   },
   "clusters": [
     {
-      "scenario": "abstractions operator packet",
-      "cases": 36,
-      "blocks": 4,
-      "reviews": 5,
-      "mean_severity": 2.556,
-      "mean_score": 0.4017,
-      "top_evidence_id": "ev_0011",
-      "recommended_action": "accept only if decision claims cite fixture evidence"
-    },
-    {
-      "scenario": "cumbuca evidence replay",
-      "cases": 36,
-      "blocks": 4,
-      "reviews": 5,
-      "mean_severity": 2.611,
-      "mean_score": 0.3954,
-      "top_evidence_id": "ev_0044",
-      "recommended_action": "block release until cited evidence is regenerated"
-    },
-    {
-      "scenario": "proprietary regression harness",
+      "scenario": "claim regression harness",
       "cases": 36,
       "blocks": 3,
       "reviews": 5,
       "mean_severity": 2.528,
-      "mean_score": 0.4047,
+      "mean_score": 0.4006,
       "top_evidence_id": "ev_0022",
       "recommended_action": "open a regression issue with trace and benchmark delta"
     },
     {
-      "scenario": "wedge boundary probe",
+      "scenario": "evidence replay",
+      "cases": 36,
+      "blocks": 4,
+      "reviews": 5,
+      "mean_severity": 2.611,
+      "mean_score": 0.4231,
+      "top_evidence_id": "ev_0132",
+      "recommended_action": "block release until cited evidence is regenerated"
+    },
+    {
+      "scenario": "handoff boundary probe",
       "cases": 36,
       "blocks": 3,
       "reviews": 4,
       "mean_severity": 2.528,
-      "mean_score": 0.3987,
-      "top_evidence_id": "ev_0077",
+      "mean_score": 0.402,
+      "top_evidence_id": "ev_0121",
       "recommended_action": "route to reviewer with evidence packet"
+    },
+    {
+      "scenario": "review operator packet",
+      "cases": 36,
+      "blocks": 4,
+      "reviews": 5,
+      "mean_severity": 2.556,
+      "mean_score": 0.4027,
+      "top_evidence_id": "ev_0055",
+      "recommended_action": "accept only if decision claims cite fixture evidence"
     }
   ],
   "highest_risk": {
-    "scenario": "cumbuca evidence replay",
+    "scenario": "evidence replay",
     "cases": 36,
     "blocks": 4,
     "reviews": 5,
     "mean_severity": 2.611,
-    "mean_score": 0.3954,
-    "top_evidence_id": "ev_0044",
+    "mean_score": 0.4231,
+    "top_evidence_id": "ev_0132",
     "recommended_action": "block release until cited evidence is regenerated"
   }
 }

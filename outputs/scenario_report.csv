@@ -1,5 +1,5 @@
 scenario,cases,blocks,reviews,mean_severity,mean_score,top_evidence_id,recommended_action
-abstractions operator packet,36,4,5,2.556,0.4017,ev_0011,accept only if decision claims cite fixture evidence
-cumbuca evidence replay,36,4,5,2.611,0.3954,ev_0044,block release until cited evidence is regenerated
-proprietary regression harness,36,3,5,2.528,0.4047,ev_0022,open a regression issue with trace and benchmark delta
-wedge boundary probe,36,3,4,2.528,0.3987,ev_0077,route to reviewer with evidence packet
+claim regression harness,36,3,5,2.528,0.4006,ev_0022,open a regression issue with trace and benchmark delta
+evidence replay,36,4,5,2.611,0.4231,ev_0132,block release until cited evidence is regenerated
+handoff boundary probe,36,3,4,2.528,0.402,ev_0121,route to reviewer with evidence packet
+review operator packet,36,4,5,2.556,0.4027,ev_0055,accept only if decision claims cite fixture evidence

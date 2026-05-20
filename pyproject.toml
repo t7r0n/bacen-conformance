@@ -1,7 +1,7 @@
 [project]
 name = "bacen-conformance"
 version = "0.1.0"
-description = "An open conformance test suite + idempotency/replay harness for Brazil's Pix and Open Finance APIs - written in Elixir to match Cumbuca's st"
+description = "An open conformance test suite + idempotency/replay harness for Brazil's Pix and Open Finance APIs - written in Elixir t"
 readme = "README.md"
 requires-python = ">=3.12"
 authors = [
