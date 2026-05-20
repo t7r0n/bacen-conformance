@@ -1,0 +1,69 @@
+{
+  "company": "Cumbuca",
+  "repo": "bacen-conformance",
+  "terms": [
+    "cumbuca",
+    "wedge",
+    "proprietary",
+    "abstractions",
+    "official",
+    "bacen",
+    "finance",
+    "specs"
+  ],
+  "metrics": [
+    "cumbuca_coverage",
+    "wedge_risk",
+    "proprietary_precision",
+    "abstractions_latency"
+  ],
+  "failure_modes": [
+    "cumbuca_drift",
+    "wedge_gap",
+    "proprietary_misroute",
+    "abstractions_blindspot"
+  ],
+  "evidence_density": 17.75,
+  "pressure_index": 0.3167,
+  "blocked_share": 0.0972,
+  "review_share": 0.1319,
+  "top_leverage_points": [
+    {
+      "rank": 1,
+      "scenario": "cumbuca evidence replay",
+      "metric": "cumbuca_coverage",
+      "failure_mode": "cumbuca_drift",
+      "evidence": "ev_0044",
+      "operator_action": "block release until cited evidence is regenerated",
+      "severity": 2.611
+    },
+    {
+      "rank": 2,
+      "scenario": "abstractions operator packet",
+      "metric": "wedge_risk",
+      "failure_mode": "wedge_gap",
+      "evidence": "ev_0011",
+      "operator_action": "accept only if decision claims cite fixture evidence",
+      "severity": 2.556
+    },
+    {
+      "rank": 3,
+      "scenario": "proprietary regression harness",
+      "metric": "proprietary_precision",
+      "failure_mode": "proprietary_misroute",
+      "evidence": "ev_0022",
+      "operator_action": "open a regression issue with trace and benchmark delta",
+      "severity": 2.528
+    },
+    {
+      "rank": 4,
+      "scenario": "wedge boundary probe",
+      "metric": "abstractions_latency",
+      "failure_mode": "abstractions_blindspot",
+      "evidence": "ev_0077",
+      "operator_action": "route to reviewer with evidence packet",
+      "severity": 2.528
+    }
+  ],
+  "readout": "Cumbuca gets a local, deterministic pressure test around cumbuca, wedge, and proprietary. The useful part is not the dashboard; it is the repeatable evidence path from fixture to failure to operator action."
+}

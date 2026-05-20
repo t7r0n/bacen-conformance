@@ -2,19 +2,39 @@
 
 An open conformance test suite + idempotency/replay harness for Brazil's Pix and Open Finance APIs - written in Elixir to match Cumbuca's stack, vendor neutral on the surface, Cumbuca flavoured under the hood.
 
-## Why This Exists
+![Bacen Conformance working dashboard](outputs/project_working.svg)
 
-Cumbuca's wedge is "no proprietary abstractions - code against the official Bacen and Open Finance specs." That is beautiful engineering taste but it has a cruel side effect: the official specs are vast, change frequently, and the failure modes (timeouts, idempotency, divergent participant behaviour at Itau vs. Bradesco vs. Nubank) are not in the spec at all.
+## Why it exists
 
-## What It Builds
+Cumbuca's wedge is "no proprietary abstractions - code against the official Bacen and Open Finance specs." That is beautiful engineering taste but it has a cruel side effect: the official specs are vast, change frequently, and the failure modes (timeouts, idempotency, divergent participant behaviour at Itau vs.
 
-- Replays synthetic `cumbuca` and `wedge` cases against the project's evidence rules.
-- Scores `cumbuca_coverage`, `wedge_risk`, and `proprietary_precision` so regressions are visible in CSV and JSON.
-- Plants `cumbuca drift` and `wedge gap` failures as negative controls.
-- Writes citation-locked decision claims; unsupported claims fail verification.
-- Exports a review dashboard and demo pack for `bacen-conformance` without hosted services.
+Most internal demos stop at a pretty chart. This repository is built around the harder part: a repeatable path from fixture, to failure, to evidence, to the operator action a serious team would actually trust.
 
-## Local Run
+## What is inside
+
+- A deterministic replay harness tuned around cumbuca, wedge, and proprietary.
+- Company-specific strategy code in `src/bacen_conformance/strategy.py`, not just README-level customization.
+- Citation-locked reports where every decision claim has to point back to a generated evidence ID.
+- Two visual artifacts generated from the latest run: `outputs/project_working.svg` and `outputs/evidence_map.svg`.
+- A portable demo pack with JSON, CSV, Markdown, HTML, SVG, and benchmark artifacts.
+
+![Bacen Conformance evidence map](outputs/evidence_map.svg)
+
+## Signals it measures
+
+- `cumbuca coverage`
+- `wedge risk`
+- `proprietary precision`
+- `abstractions latency`
+
+## Failure modes it plants
+
+- cumbuca drift
+- wedge gap
+- proprietary misroute
+- abstractions blindspot
+
+## Run it locally
 
 ```bash
 uv sync
@@ -23,16 +43,14 @@ uv run pytest -q
 uv run ruff check .
 ```
 
-## Outputs
+## Outputs worth opening
 
-- `outputs/analysis.json`
-- `outputs/scenario_report.csv`
-- `outputs/decision_report.md`
-- `outputs/evidence_packet.md`
-- `outputs/domain_rubric.json`
-- `outputs/failure_matrix.md`
-- `outputs/trace_graph.mmd`
 - `outputs/dashboard.html`
+- `outputs/project_working.svg`
+- `outputs/evidence_map.svg`
+- `outputs/operator_brief.md`
+- `outputs/decision_report.md`
+- `outputs/strategy_model.json`
 - `outputs/demo_pack.zip`
 
 ## Sources
@@ -49,4 +67,4 @@ uv run ruff check .
 
 ## Boundary
 
-This repository uses synthetic fixtures only. It has no credentials, no customer data, no outreach data, and no dependency on a hosted API.
+Everything runs locally against synthetic fixtures. There are no credentials, no customer records, no outreach files, and no hosted API dependency.
