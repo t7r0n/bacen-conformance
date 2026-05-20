@@ -1,6 +1,6 @@
 # Decision Report: Bacen Conformance
 
-An open conformance test suite + idempotency/replay harness for Brazil's Pix and Open Finance APIs - written in Elixir to match Cumbuca's stack, vendor neutral on the surface, Cumbuca flavoured under the hood.
+An open conformance test suite + idempotency/replay harness for Brazil's Pix and Open Finance APIs — written in Elixir to match Cumbuca's stack, vendor neutral on the surface, Cumbuca flavoured under the hood.
 
 ## Evidence-Grounded Findings
 
