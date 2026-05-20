@@ -1,6 +1,6 @@
 # Operator Brief: Cumbuca
 
-Cumbuca gets a local, deterministic pressure test around cumbuca, wedge, and proprietary. The useful part is not the dashboard; it is the repeatable evidence path from fixture to failure to operator action.
+Cumbuca gets a local, deterministic pressure test around cumbuca, wedge, and proprietary. The useful part is the repeatable evidence path from fixture to failure to operator action.
 
 ## Highest-leverage checks
 

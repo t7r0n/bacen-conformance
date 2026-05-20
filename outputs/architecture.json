@@ -1,11 +1,11 @@
 {
   "layers": [
     {
-      "name": "synthetic_fixture_replay",
+      "name": "fixture_replay",
       "purpose": "exercise cumbuca and wedge cases"
     },
     {
-      "name": "domain_strategy",
+      "name": "strategy_model",
       "purpose": "score cumbuca_coverage and wedge_risk"
     },
     {
